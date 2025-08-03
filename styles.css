@@ -709,7 +709,6 @@ header {
 
 /* Footer */
 footer {
-    background: var(--dark-text);
     color: white;
     text-align: center;
     padding: 2vh;
