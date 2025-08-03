@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriptSnap Prototype</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-scroll"></i>
+                </div>
+                <div>
+                    <div class="logo-text">ScriptSnap</div>
+                    <div class="tagline">Transform videos into learning assets</div>
+                </div>
+            </div>
+            <div class="nav-controls">
+                <button class="btn btn-secondary">
+                    <i class="fas fa-download"></i> Download
+                </button>
+                <button class="btn btn-primary">
+                    <i class="fas fa-play-circle"></i> Demo
+                </button>
+            </div>
+        </header>
+        
+        <div class="prototype-title">
+            <h1>ScriptSnap Responsive Scaling Prototype</h1>
+            <p>This prototype scales proportionally based on your device size. All elements maintain their relative proportions.</p>
+        </div>
+        
+        <div class="user-journey">
+            <h2 class="section-title">User Journey Storyboard</h2>
+            <div class="journey-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Discover</h3>
+                    <p class="step-description">Student finds extension in Chrome Web Store</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Activate</h3>
+                    <p class="step-description">Clicks while watching lecture video</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Process</h3>
+                    <p class="step-description">AI analyzes content in real-time</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Review</h3>
+                    <p class="step-description">Studies notes & concept maps</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">Test</h3>
+                    <p class="step-description">Practices with AI-generated questions</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <h3 class="step-title">Export</h3>
+                    <p class="step-description">Saves to preferred platform</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="screens-container">
+            <!-- Screen 1: Video Page with Extension -->
+            <div class="screen">
+                <div class="screen-header">
+                    <div>
+                        <h3 class="screen-title"><i class="fas fa-play-circle"></i> Video Page with Extension</h3>
+                        <p class="screen-description">User activates ScriptSnap while watching a lecture video</p>
+                    </div>
+                    <div>Screen 1 of 6</div>
+                </div>
+                <div class="screen-content">
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <div class="browser-button red"></div>
+                            <div class="browser-button yellow"></div>
+                            <div class="browser-button green"></div>
+                            <div class="browser-url">https://learning-platform.com/lectures/data-structures-101</div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="mockup" style="background: #f8f9fa;">
+                                <div class="mockup-video">
+                                    <div class="video-controls">
+                                        <div class="video-title">Data Structures 101: Arrays vs Linked Lists</div>
+                                        <div>
+                                            <i class="fas fa-expand" style="color: white; margin-left: 1.5vw;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="extension-button">
+                                    <i class="fas fa-scroll"></i> Snap This Lecture
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Screen 2: Processing State -->
+            <div class="screen">
+                <div class="screen-header">
+                    <div>
+                        <h3 class="screen-title"><i class="fas fa-cogs"></i> Processing State</h3>
+                        <p class="screen-description">AI analyzes video content and generates learning materials</p>
+                    </div>
+                    <div>Screen 2 of 6</div>
+                </div>
+                <div class="screen-content">
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <div class="browser-button red"></div>
+                            <div class="browser-button yellow"></div>
+                            <div class="browser-button green"></div>
+                            <div class="browser-url">https://learning-platform.com/lectures/data-structures-101</div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="mockup" style="background: #f8f9fa;">
+                                <div class="mockup-video">
+                                    <div class="video-controls">
+                                        <div class="video-title">Data Structures 101: Arrays vs Linked Lists</div>
+                                        <div>
+                                            <i class="fas fa-expand" style="color: white; margin-left: 1.5vw;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="processing-overlay">
+                                    <div class="processing-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <div class="processing-text">Analyzing Lecture Content</div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <div style="margin-top: 1.5vh; color: #6c757d;">
+                                        <i class="fas fa-lightbulb"></i> Detected key concepts: Arrays, Linked Lists, Time Complexity
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Screen 3: Summary Dashboard -->
+            <div class="screen">
+                <div class="screen-header">
+                    <div>
+                        <h3 class="screen-title"><i class="fas fa-columns"></i> Summary Dashboard</h3>
+                        <p class="screen-description">Structured notes with timestamps and concept maps</p>
+                    </div>
+                    <div>Screen 3 of 6</div>
+                </div>
+                <div class="screen-content">
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <div class="browser-button red"></div>
+                            <div class="browser-button yellow"></div>
+                            <div class="browser-button green"></div>
+                            <div class="browser-url">https://app.scriptsnap.ai/summary/lecture-12345</div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="dashboard-layout">
+                                <div class="dashboard-left">
+                                    <div class="video-miniplayer"></div>
+                                    <div class="tabs">
+                                        <div class="tab active">Summary</div>
+                                        <div class="tab">Flashcards</div>
+                                        <div class="tab">Quiz</div>
+                                        <div class="tab">Export</div>
+                                    </div>
+                                    <div class="summary-item">
+                                        <div class="timestamp"><i class="fas fa-clock"></i> 05:30 - 07:45</div>
+                                        <div><strong>Arrays Introduction</strong> - Contiguous memory locations, fixed size, random access O(1)</div>
+                                    </div>
+                                    <div class="summary-item">
+                                        <div class="timestamp"><i class="fas fa-clock"></i> 08:10 - 12:30</div>
+                                        <div><strong>Linked Lists</strong> - Dynamic size, non-contiguous memory, sequential access O(n)</div>
+                                    </div>
+                                    <div class="summary-item">
+                                        <div class="timestamp"><i class="fas fa-clock"></i> 13:15 - 16:40</div>
+                                        <div><strong>Time Complexity Comparison</strong> - Access: Array O(1) vs LL O(n). Insertion: Array O(n) vs LL O(1)</div>
+                                    </div>
+                                    <div class="summary-item">
+                                        <div class="timestamp"><i class="fas fa-clock"></i> 17:20 - 22:10</div>
+                                        <div><strong>Use Cases</strong> - Arrays: when random access needed. LL: when frequent insertions/deletions</div>
+                                    </div>
+                                </div>
+                                <div class="dashboard-right">
+                                    <h3 style="margin-bottom: 1.5vh; font-weight: 600;">Concept Map: Data Structures</h3>
+                                    <div class="concept-map">
+                                        <div class="concept-map-inner">                                            
+                                            <!-- Nodes -->
+                                            <div class="concept-node node-main">Data Structures</div>
+                                            <div class="concept-node node-left">Arrays<br><span style="font-size: calc(var(--base-size) * 0.8); font-weight: normal;">O(1) access</span></div>
+                                            <div class="concept-node node-right">Linked Lists<br><span style="font-size: calc(var(--base-size) * 0.8); font-weight: normal;">O(1) insertion</span></div>
+                                            <div class="concept-node node-bottom-left">Time Complexity</div>
+                                            <div class="concept-node node-bottom-right">Use Cases</div>
+                                        </div>
+                                    </div>
+                                    <div class="concept-map-actions">
+                                        <button class="btn btn-primary">
+                                            <i class="fas fa-file-export"></i> Export Notes
+                                        </button>
+                                        <button class="btn" style="background: #e0f7fa; color: #0097a7;">
+                                            <i class="fas fa-question-circle"></i> Generate Quiz
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Screen 4: Flashcards View -->
+            <div class="screen">
+                <div class="screen-header">
+                    <div>
+                        <h3 class="screen-title"><i class="fas fa-layer-group"></i> Flashcards View</h3>
+                        <p class="screen-description">AI-generated flashcards for key concepts with video references</p>
+                    </div>
+                    <div>Screen 4 of 6</div>
+                </div>
+                <div class="screen-content">
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <div class="browser-button red"></div>
+                            <div class="browser-button yellow"></div>
+                            <div class="browser-button green"></div>
+                            <div class="browser-url">https://app.scriptsnap.ai/summary/lecture-12345/flashcards</div>
+                        </div>
+                        <div class="browser-content">
+                            <div style="padding: 2vh; text-align: center;">
+                                <h2 style="margin-bottom: 2vh; font-weight: 600; color: var(--dark-text);">Data Structures Flashcards</h2>
+                                <div style="max-width: 100%; height: 25vh; margin: 0 auto 2vh; perspective: 100vw;">
+                                    <div style="width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform 0.6s; transform: rotateY(0deg);">
+                                        <div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; background: var(--primary); border-radius: 1.2vw; display: flex; flex-direction: column; justify-content: center; padding: 2vh; color: white; box-shadow: 0 1vh 2.5vh rgba(67,97,238,0.25);">
+                                            <div class="timestamp" style="justify-content: center; color: rgba(255,255,255,0.8);">
+                                                <i class="fas fa-clock"></i> 05:30 - 07:45
+                                            </div>
+                                            <h3 style="font-size: calc(var(--base-size) * 1.6); margin: 1.5vh 0; font-weight: 700;">Arrays</h3>
+                                            <p style="font-size: calc(var(--base-size) * 1.1); opacity: 0.9;">What data structure has O(1) random access time?</p>
+                                        </div>
+                                        <div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; background: var(--secondary); border-radius: 1.2vw; display: flex; flex-direction: column; justify-content: center; padding: 2vh; color: var(--secondary-dark); transform: rotateY(180deg); box-shadow: 0 1vh 2.5vh rgba(6,214,160,0.25);">
+                                            <h3 style="font-size: calc(var(--base-size) * 1.6); margin-bottom: 1.5vh; font-weight: 700;">Key Characteristics</h3>
+                                            <ul style="text-align: left; font-size: calc(var(--base-size) * 1.1); max-width: 90%; margin: 0 auto;">
+                                                <li style="margin-bottom: 0.8vh;">Contiguous memory locations</li>
+                                                <li style="margin-bottom: 0.8vh;">Fixed size (static arrays)</li>
+                                                <li style="margin-bottom: 0.8vh;">O(1) random access time</li>
+                                                <li>Inefficient insertions/deletions (O(n))</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; justify-content: center; gap: 1vh; flex-wrap: wrap;">
+                                    <button class="btn" style="background: var(--border);">
+                                        <i class="fas fa-arrow-left"></i> Previous
+                                    </button>
+                                    <button class="btn btn-primary">
+                                        Flip Card <i class="fas fa-sync-alt"></i>
+                                    </button>
+                                    <button class="btn" style="background: var(--secondary); color: var(--secondary-dark);">
+                                        Next <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Screen 5: Quiz View -->
+            <div class="screen">
+                <div class="screen-header">
+                    <div>
+                        <h3 class="screen-title"><i class="fas fa-question-circle"></i> Quiz View</h3>
+                        <p class="screen-description">Auto-generated questions based on video content</p>
+                    </div>
+                    <div>Screen 5 of 6</div>
+                </div>
+                <div class="screen-content">
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <div class="browser-button red"></div>
+                            <div class="browser-button yellow"></div>
+                            <div class="browser-button green"></div>
+                            <div class="browser-url">https://app.scriptsnap.ai/summary/lecture-12345/quiz</div>
+                        </div>
+                        <div class="browser-content">
+                            <div style="padding: 2vh;">
+                                <div style="text-align: center; margin-bottom: 2vh;">
+                                    <h2 style="font-weight: 700; color: var(--dark-text); margin-bottom: 1vh;">Data Structures Quiz</h2>
+                                    <p style="color: var(--light-text);">Generated from lecture: Data Structures 101: Arrays vs Linked Lists</p>
+                                </div>
+                                
+                                <div class="quiz-container">
+                                    <div class="quiz-question">
+                                        Q1: What is the time complexity for accessing an element by index in an array?
+                                    </div>
+                                    <div class="quiz-options">
+                                        <div class="quiz-option">A) O(n)</div>
+                                        <div class="quiz-option">B) O(log n)</div>
+                                        <div class="quiz-option">C) O(1)</div>
+                                        <div class="quiz-option">D) O(n log n)</div>
+                                    </div>
+                                    
+                                    <div class="quiz-question">
+                                        Q2: Which data structure is more efficient for frequent insertions and deletions at the beginning?
+                                    </div>
+                                    <div class="quiz-options">
+                                        <div class="quiz-option">A) Array</div>
+                                        <div class="quiz-option">B) Linked List</div>
+                                        <div class="quiz-option">C) Both are equally efficient</div>
+                                        <div class="quiz-option">D) Depends on the programming language</div>
+                                    </div>
+                                    
+                                    <div class="quiz-question">
+                                        Q3: What is the main advantage of linked lists over arrays?
+                                    </div>
+                                    <div class="quiz-options">
+                                        <div class="quiz-option">A) Constant time access to elements</div>
+                                        <div class="quiz-option">B) Fixed size allocation</div>
+                                        <div class="quiz-option">C) Dynamic size and efficient insertions/deletions</div>
+                                        <div class="quiz-option">D) Better cache locality</div>
+                                    </div>
+                                    
+                                    <div style="text-align: center; margin-top: 2vh;">
+                                        <button class="btn btn-primary">
+                                            <i class="fas fa-check-circle"></i> Submit Answers
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Screen 6: Export Options -->
+            <div class="screen">
+                <div class="screen-header">
+                    <div>
+                        <h3 class="screen-title"><i class="fas fa-file-export"></i> Export Options</h3>
+                        <p class="screen-description">Save learning materials to preferred platforms</p>
+                    </div>
+                    <div>Screen 6 of 6</div>
+                </div>
+                <div class="screen-content">
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <div class="browser-button red"></div>
+                            <div class="browser-button yellow"></div>
+                            <div class="browser-button green"></div>
+                            <div class="browser-url">https://app.scriptsnap.ai/summary/lecture-12345/export</div>
+                        </div>
+                        <div class="browser-content">
+                            <div style="padding: 2vh;">
+                                <h2 style="text-align: center; margin-bottom: 2.5vh; font-weight: 700; color: var(--dark-text);">Export Your Learning Materials</h2>
+                                
+                                <div class="export-grid">
+                                    <div class="export-option">
+                                        <div class="export-icon">
+                                            <i class="fa-solid fa-n"></i>
+                                        </div>
+                                        <h3 class="export-title">Notion</h3>
+                                        <p class="export-description">Export as formatted Notion page with headings, bullet points and timestamps</p>
+                                    </div>
+                                    
+                                    <div class="export-option">
+                                        <div class="export-icon">
+                                            <i class="fab fa-google-drive"></i>
+                                        </div>
+                                        <h3 class="export-title">Google Docs</h3>
+                                        <p class="export-description">Generate a complete study guide in Google Docs format</p>
+                                    </div>
+                                    
+                                    <div class="export-option">
+                                        <div class="export-icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <h3 class="export-title">PDF</h3>
+                                        <p class="export-description">Download as PDF with cover page and table of contents</p>
+                                    </div>
+                                    
+                                    <div class="export-option">
+                                        <div class="export-icon">
+                                            <i class="fas fa-graduation-cap"></i>
+                                        </div>
+                                        <h3 class="export-title">Anki Deck</h3>
+                                        <p class="export-description">Export flashcards as Anki deck for spaced repetition</p>
+                                    </div>
+                                    
+                                    <div class="export-option">
+                                        <div class="export-icon">
+                                            <i class="fas fa-file-code"></i>
+                                        </div>
+                                        <h3 class="export-title">Markdown</h3>
+                                        <p class="export-description">Get raw Markdown for custom note-taking systems</p>
+                                    </div>
+                                    
+                                    <div class="export-option">
+                                        <div class="export-icon">
+                                            <i class="fas fa-cloud-download-alt"></i>
+                                        </div>
+                                        <h3 class="export-title">All Formats</h3>
+                                        <p class="export-description">Download ZIP with all formats (Premium)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>ScriptSnap Prototype • Responsive Scaling Design • © 2023</p>
+            <p>Scale Factor: <span id="scaleValue">1</span></p>
+        </footer>
+    </div>
+
+    <script>
+        // Update device size indicator
+        function updateDeviceSize() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            document.getElementById('sizeValue').textContent = `${width}px × ${height}px`;
+            document.getElementById('scaleValue').textContent = document.querySelector(':root').style.getPropertyValue('--scale-factor') || '1';
+        }
+        
+        // Initialize and update on resize
+        window.addEventListener('load', updateDeviceSize);
+        window.addEventListener('resize', updateDeviceSize);
+        
+        // Adjust scaling factor based on viewport width
+        function adjustScaling() {
+            const width = window.innerWidth;
+            let scaleFactor = 1;
+            
+            if (width < 576) scaleFactor = 0.8;
+            else if (width < 768) scaleFactor = 0.85;
+            else if (width < 992) scaleFactor = 0.9;
+            else if (width < 1200) scaleFactor = 0.95;
+            else scaleFactor = 1;
+            
+            document.documentElement.style.setProperty('--scale-factor', scaleFactor);
+            updateDeviceSize();
+        }
+        
+        // Initialize and update on resize
+        window.addEventListener('load', adjustScaling);
+        window.addEventListener('resize', adjustScaling);
+    </script>
+</body>
+</html>
